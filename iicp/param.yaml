@@ -1,0 +1,17 @@
+/sub/rgb/topic:  '/camera/rgb/image_rect_color'
+/sub/depth/topic: '/camera/depth_registered/sw_registered/image_rect'
+/sub/points/topic: '/camera/depth_registered/points'
+/usepoints: false
+/buffernumber: 1000
+
+
+
+/fx: 570
+/fy: 570
+/cx: 319.5 
+/cy: 239.5
+/width: 640
+/height: 480
+
+
+

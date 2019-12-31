@@ -1,0 +1,24 @@
+The ROS package iicp provides an implementation of the visual odometry estimation from consecutive RGB-D images
+
+
+Requirements:
+Ubuntu system
+Point Cloud Library 1.7
+Ros-Hydro for Ubuntu 12.04 or Ros-Indigo for Ubuntu 14.04
+if you are using Ros-Indigo, please delete the line "<depend package="opencv2"/>" in the manifest.xml file
+
+Build up the package with the CMakeLists.txt file
+
+
+Usage with example of fr1_desk sequence:
+Download the fr1_desk.bag from . (the rosbag file is generated with the tools provided by TUMDataset)
+
+With the Terminal windows:
+run  roscore.
+In an other terminal, run  rosparam load param.yaml;  rosrun iicp iicp
+In an other terminal, run  rosparam set_use_time true;  rosbag play fr1_desk.bag  --clock 
+
+cd the folder where fr1_desk.bag is stored, ru
+
+
+
